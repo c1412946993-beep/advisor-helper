@@ -121,14 +121,14 @@ export const QuestionPage: React.FC<QuestionPageProps> = ({ onAnswersChange, onN
 
             <div className={`flex gap-3 ${currentQuestion === 0 ? 'justify-end' : 'justify-between'}`}>
               {currentQuestion > 0 && (
-                <Button
-                  onClick={handlePrevious}
-                  variant="secondary"
-                  className="flex items-center gap-2"
-                >
-                  <ChevronLeft className="w-4 h-4" />
-                  Previous
-                </Button>
+              <Button
+                onClick={handlePrevious}
+                variant="secondary"
+                className="flex items-center gap-2"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                Previous
+              </Button>
               )}
               <Button
                 onClick={handleNext}

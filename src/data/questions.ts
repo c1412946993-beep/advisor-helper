@@ -23,7 +23,14 @@ export interface GeneratedQuestion {
   priority: number;
 }
 
-export const questionnaire = [
+export interface QuestionnaireItem {
+  id: string;
+  question: string;
+  type: 'single' | 'multi';
+  options: QuestionOption[];
+}
+
+export const questionnaire: QuestionnaireItem[] = [
   {
     id: 'net_worth',
     question: 'What is your approximate investable net worth?',
